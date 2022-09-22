@@ -1,0 +1,8 @@
+dagre-layout for Debian
+-----------------------
+
+The module was initially a package of upstream: dagre-layout.
+Dagre-layout itself is a fork of dagre.
+Since for new packages, dagre is more relevant and updated, the upstream has been changed to dagre instead.
+
+ -- Nilesh Patra <npatra974@gmail.com>  Thu, 19 Mar 2020 15:09:02 +0530

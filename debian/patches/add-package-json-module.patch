@@ -1,0 +1,11 @@
+Description: Add module name to package.json
+--- a/package.json
++++ b/package.json
+@@ -1,6 +1,7 @@
+ {
+   "name": "dagre",
+   "version": "0.8.5",
++  "module": "index.js",
+   "description": "Graph layout for JavaScript",
+   "author": "Chris Pettitt <cpettitt@gmail.com>",
+   "contributors": [

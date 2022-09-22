@@ -1,0 +1,5 @@
+Test-Command: /usr/share/pkg-js-autopkgtest/runner
+Depends: @, @builddeps@, pkg-js-autopkgtest
+Restrictions: allow-stderr, skippable
+Features: test-name=pkg-js-autopkgtest
+

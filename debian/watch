@@ -1,0 +1,8 @@
+version=4
+# It is not recommended use npmregistry. Please investigate more.
+# Origin url: https://github.com/dagrejs/dagre
+# Take a look at https://wiki.debian.org/debian/watch/
+opts="searchmode=plain,pgpmode=none,repacksuffix=+dfsg,dversionmangle=auto,oversionmangle=s/^0.8.5$/0.8.8+really0.8.5/" \
+ https://registry.npmjs.org/dagre \
+ https://registry.npmjs.org/dagre/-/dagre-(\d[\d\.]*)@ARCHIVE_EXT@ debian
+

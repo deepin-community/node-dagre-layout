@@ -1,0 +1,37 @@
+Source: node-dagre-layout
+Maintainer: Debian Javascript Maintainers <pkg-javascript-devel@lists.alioth.debian.org>
+Uploaders: Pirate Praveen <praveen@debian.org>,
+           Nilesh Patra <npatra974@gmail.com>
+Section: javascript
+Priority: optional
+Build-Depends: debhelper-compat (= 12),
+               nodejs (>= 6),
+               pkg-js-tools (>= 0.9.26~),
+               rollup,
+               uglifyjs.terser,
+               node-rollup-plugin-node-resolve (>= 11~),
+               node-rollup-plugin-buble,
+               node-rollup-plugin-commonjs (>= 15~),
+               node-graphlibrary (>= 2.2.0+really2.1.8+dfsg~),
+               node-lodash (>= 4.17.5~)
+Standards-Version: 4.5.1
+Vcs-Browser: https://salsa.debian.org/js-team/node-dagre-layout
+Vcs-Git: https://salsa.debian.org/js-team/node-dagre-layout.git
+Homepage: https://github.com/dagrejs/dagre#readme
+Rules-Requires-Root: no
+
+Package: node-dagre-layout
+Architecture: all
+Depends: ${misc:Depends},
+         nodejs (>= 6),
+         node-graphlibrary (>= 2.2.0+really2.1.8+dfsg~),
+         node-lodash (>= 4.17.5~)
+Provides: node-dagre
+Description: Graph layout for JavaScript
+ This library is an out-of-box replacement for dagre and it is based on
+ original dagre.
+ .
+ Dagre is a JavaScript library that makes it easy to lay out directed graphs on
+ the client-side.
+ .
+ Node.js is an event-based server-side JavaScript engine.

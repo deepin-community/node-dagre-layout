@@ -1,0 +1,86 @@
+node-dagre-layout (0.8.8+really0.8.5+dfsg-4) unstable; urgency=medium
+
+  * Update minimum version of rollup-plugin-node-resolve to 11
+
+ -- Pirate Praveen <praveen@debian.org>  Sat, 02 Jan 2021 14:46:19 +0530
+
+node-dagre-layout (0.8.8+really0.8.5+dfsg-3) unstable; urgency=medium
+
+  * Drop legacy node-resolve and commonjs plugins
+  * Bump Standards-Version to 4.5.1 (no changes needed)
+
+ -- Pirate Praveen <praveen@debian.org>  Tue, 29 Dec 2020 23:02:32 +0530
+
+node-dagre-layout (0.8.8+really0.8.5+dfsg-2) unstable; urgency=medium
+
+  [ Nilesh Patra ]
+  * Enforce version constraints
+
+  [ Pirate Praveen ]
+  * Add node-graphlibrary as build dependency to fix rollup warning
+
+ -- Pirate Praveen <praveen@debian.org>  Fri, 11 Dec 2020 02:04:37 +0530
+
+node-dagre-layout (0.8.8+really0.8.5+dfsg-1) unstable; urgency=medium
+
+  * Remove components: webpack-node-externals
+  * Modify watch to point to new upstream
+    + version changes: Dagre is at version 0.8.5,
+      dagre-layout is at version 0.8.8,
+      since in current scenario dagre is needed, the version is lowered
+  * Repack to remove generated files
+  * Remove un-needed patches, refresh the needed patch
+  * Add patch description
+  * Use rollup as bundler, generate minified files with terser
+  * Add provides on node-dagre
+  * Add myself to uploaders
+  * Add "Rules-Requires-Root:no", update homepage
+  * Fix copyright
+  * Update upstream/metadata
+  * Fix control with cme
+  * Fix autopkgtest
+  * Add README.Debian to explain the current state of package
+
+ -- Nilesh Patra <npatra974@gmail.com>  Thu, 19 Mar 2020 15:09:39 +0530
+
+node-dagre-layout (0.8.8-6) unstable; urgency=medium
+
+  * Remove dist in clean target
+  * Add /usr/share/nodejs to webpack resolve path
+  * Bump Standards-Version to 4.4.1 (no changes needed)
+  * Drop compat file, rely on debhelper-compat and bump compat level to 12
+
+ -- Pirate Praveen <praveen@debian.org>  Fri, 17 Jan 2020 21:23:15 +0530
+
+node-dagre-layout (0.8.8-5) unstable; urgency=medium
+
+  * Reupload to unstable
+
+ -- Pirate Praveen <praveen@debian.org>  Mon, 05 Aug 2019 05:53:19 +0000
+
+node-dagre-layout (0.8.8-4) experimental; urgency=medium
+
+  * Build with webpack 4
+  * Bump standards version to 4.4.0
+  * Switch to pkg-js-tools auto install
+
+ -- Pirate Praveen <praveen@debian.org>  Thu, 01 Aug 2019 17:07:36 +0000
+
+node-dagre-layout (0.8.8-3) experimental; urgency=medium
+
+  * Use lodash-es for consuming as ES module
+
+ -- Pirate Praveen <praveen@debian.org>  Thu, 27 Jun 2019 19:29:32 +0530
+
+node-dagre-layout (0.8.8-2) unstable; urgency=medium
+
+  * Explain why tests are disabled
+  * Add explicit module field in package.json for import to work
+
+ -- Pirate Praveen <praveen@debian.org>  Wed, 26 Jun 2019 11:38:22 +0530
+
+node-dagre-layout (0.8.8-1) unstable; urgency=low
+
+  * Initial release (Closes: #930219)
+
+ -- Pirate Praveen <praveen@debian.org>  Sat, 08 Jun 2019 19:28:24 +0530
