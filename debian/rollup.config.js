@@ -1,4 +1,4 @@
-import node from "@rollup/plugin-node-resolve";
+const {nodeResolve} = require("@rollup/plugin-node-resolve");
 var buble = require('rollup-plugin-buble');
 var cjs = require('@rollup/plugin-commonjs');
 
@@ -9,9 +9,9 @@ const config = {
   },
   plugins: [
     buble(),
-    node(
+    nodeResolve(
      {
-        moduleDirectory: ['/usr/share/nodejs', '/usr/lib/nodejs'],
+        modulePaths: ['/usr/share/nodejs', '/usr/lib/nodejs'],
         preferBuiltins: false
      }
     ),
@@ -19,6 +19,6 @@ const config = {
   ]
 };
 
-export default [
+module.exports = [
   config
 ];
