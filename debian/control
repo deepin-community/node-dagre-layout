@@ -1,20 +1,20 @@
 Source: node-dagre-layout
 Maintainer: Debian Javascript Maintainers <pkg-javascript-devel@lists.alioth.debian.org>
 Uploaders: Pirate Praveen <praveen@debian.org>,
-           Nilesh Patra <npatra974@gmail.com>
+           Nilesh Patra <nilesh@debian.org>
 Section: javascript
 Priority: optional
-Build-Depends: debhelper-compat (= 12),
-               nodejs (>= 6),
-               pkg-js-tools (>= 0.9.26~),
+Build-Depends: debhelper-compat (= 13),
+               nodejs,
+               dh-sequence-nodejs,
                rollup,
-               uglifyjs.terser,
-               node-rollup-plugin-node-resolve (>= 11~),
+               terser,
+               node-rollup-plugin-node-resolve,
                node-rollup-plugin-buble,
-               node-rollup-plugin-commonjs (>= 15~),
-               node-graphlibrary (>= 2.2.0+really2.1.8+dfsg~),
-               node-lodash (>= 4.17.5~)
-Standards-Version: 4.5.1
+               node-rollup-plugin-commonjs,
+               node-graphlibrary,
+               node-lodash
+Standards-Version: 4.6.1
 Vcs-Browser: https://salsa.debian.org/js-team/node-dagre-layout
 Vcs-Git: https://salsa.debian.org/js-team/node-dagre-layout.git
 Homepage: https://github.com/dagrejs/dagre#readme
@@ -23,9 +23,9 @@ Rules-Requires-Root: no
 Package: node-dagre-layout
 Architecture: all
 Depends: ${misc:Depends},
-         nodejs (>= 6),
+         nodejs,
          node-graphlibrary (>= 2.2.0+really2.1.8+dfsg~),
-         node-lodash (>= 4.17.5~)
+         node-lodash
 Provides: node-dagre
 Description: Graph layout for JavaScript
  This library is an out-of-box replacement for dagre and it is based on

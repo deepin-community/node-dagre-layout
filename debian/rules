@@ -5,10 +5,10 @@
 export NODE_PATH := ${CURDIR}
 
 %:
-	dh $@ --with nodejs
+	dh $@
 
 override_dh_auto_build:
 	rollup -c debian/rollup.config.js index.js -n dagre -f umd -o dist/dagre.js
 	rollup -c debian/rollup.config.js index.js -f cjs -o dist/dagre.core.js
-	uglifyjs.terser dist/dagre.js -c -m -o dist/dagre.min.js
-	uglifyjs.terser dist/dagre.core.js -c -m -o dist/dagre.core.min.js
+	terser dist/dagre.js -c -m -o dist/dagre.min.js
+	terser dist/dagre.core.js -c -m -o dist/dagre.core.min.js
